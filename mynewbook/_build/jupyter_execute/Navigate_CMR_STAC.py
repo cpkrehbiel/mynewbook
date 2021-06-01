@@ -229,8 +229,4 @@ plt.imshow(image)
 plt.show()
 
 
-# In[ ]:
-
-
-
-
+# #### Congrats! You have visualized your first Cloud-Native HLS asset!
