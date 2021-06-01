@@ -1,0 +1,1086 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1. Getting Started &#8212; My sample book</title>
+    
+  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.c441f2ba0852f4cabcb80105e3a46ae6.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Here’s my sample title" href="mymarkdownfile.html" />
+    <link rel="prev" title="Content with notebooks" href="notebooks.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">My sample book</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to your Jupyter Book
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="content.html">
+   Content in Jupyter Book
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="markdown.html">
+     Markdown Files
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="notebooks.html">
+     Content with notebooks
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     1. Getting Started
+     <a id="getstarted">
+     </a>
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="#navigating-the-cmr-stac-api-a-id-navigatestac-a">
+     2. Navigating the CMR-STAC API
+     <a id="navigatestac">
+     </a>
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="mymarkdownfile.html">
+     Here’s my sample title
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/Navigate_CMR_STAC.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FNavigate_CMR_STAC.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/Navigate_CMR_STAC.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   1. Getting Started
+   <a id="getstarted">
+   </a>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#import-packages-a-id-1-1-a">
+     1.1 Import Packages
+     <a id="1.1">
+     </a>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#import-the-required-packages-and-set-the-input-working-directory-to-run-this-jupyter-notebook-locally">
+       Import the required packages and set the input/working directory to run this Jupyter Notebook locally.
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#navigating-the-cmr-stac-api-a-id-navigatestac-a">
+   2. Navigating the CMR-STAC API
+   <a id="navigatestac">
+   </a>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#learn-about-navigating-nasa-s-common-metadata-repository-cmr-spatiotemporal-asset-catalog-stac-api">
+     Learn about navigating NASA’s Common Metadata Repository (CMR) SpatioTemporal Asset Catalog (STAC) API.
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#introduction-to-the-cmr-stac-api-a-id-2-1-a">
+     2.1 Introduction to the CMR-STAC API
+     <a id="2.1">
+     </a>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#what-is-stac">
+       What is STAC?
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#four-stac-specifications">
+       Four STAC Specifications:
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#in-the-section-below-we-will-walk-through-an-example-of-each-specification-for-additional-information-check-out-https-stacspec-org">
+         In the section below, we will walk through an example of each specification. For additional information, check out: https://stacspec.org/.
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#stac-api-endpoint-that-enables-the-querying-of-stac-items">
+       1. STAC API: Endpoint that enables the querying of STAC items.
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#below-set-the-cmr-stac-api-endpoint-to-a-variable-and-use-the-requests-package-to-send-a-get-request-to-the-endpoint-and-set-the-response-to-a-variable">
+         Below, set the CMR-STAC API Endpoint to a variable, and use the
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           requests
+          </span>
+         </code>
+         package to send a GET request to the endpoint, and set the response to a variable.
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#you-will-notice-above-that-the-cmr-stac-api-contains-many-different-endpoints-not-just-from-nasa-lp-daac-but-also-contains-endpoints-for-other-nasa-esdis-daacs">
+         You will notice above that the CMR-STAC API contains many different endpoints–not just from NASA LP DAAC, but also contains endpoints for other NASA ESDIS DAACs.
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#stac-catalog-contains-a-json-file-of-links-that-organize-all-of-the-collections-available">
+       2. STAC Catalog: Contains a JSON file of links that organize all of the collections available.
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#below-search-for-lp-daac-catalogs-and-print-the-information-contained-in-the-catalog-that-we-will-be-using-today-lpcloud">
+         Below, search for LP DAAC Catalogs, and print the information contained in the Catalog that we will be using today,
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           LPCLOUD
+          </span>
+         </code>
+         .
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#below-print-the-links-contained-in-the-lp-cloud-stac-catalog">
+         Below, print the links contained in the LP CLOUD STAC Catalog:
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#stac-collection-extension-of-stac-catalog-containing-additional-information-that-describe-the-stac-items-in-that-collection">
+       3. STAC Collection: Extension of STAC Catalog containing additional information that describe the STAC Items in that Collection.
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#below-get-a-response-from-the-lpcloud-collection-and-print-the-information-included-in-the-response">
+         Below, get a response from the LPCLOUD Collection and print the information included in the response.
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#as-of-march-3-2021-there-are-three-collections-available-and-more-will-be-added-in-the-future">
+         As of March 3, 2021, there are three collections available, and more will be added in the future.
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#print-out-one-of-the-collections">
+         Print out one of the collections:
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#in-cmr-id-is-used-to-query-by-a-specific-product-so-be-sure-to-save-the-id-for-the-hls-s30-and-l30-v1-5-products-below">
+         In CMR,
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           id
+          </span>
+         </code>
+         is used to query by a specific product, so be sure to save the ID for the HLS S30 and L30 V1.5 products below:
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#note-that-the-id-shortname-is-in-the-format-productshortname-vvvv-where-vvv-product-version">
+         Note that the “id” shortname is in the format: productshortname.vVVV (where VVV = product version)
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#explore-the-attributes-contained-in-the-hlss30-collection">
+         Explore the attributes contained in the HLSS30 Collection.
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#so-here-we-can-see-that-the-extent-is-global-and-can-also-see-the-temporal-range-where-none-means-on-going-or-to-present">
+         So here we can see that the extent is global, and can also see the temporal range–where “None” means on-going or to present.
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#next-explore-the-attributes-of-the-hlsl30-collection">
+         Next, explore the attributes of the HLSL30 collection.
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#above-notice-that-the-l30-product-has-a-different-start-date-than-the-s30-product">
+         Above, notice that the L30 product has a different start date than the S30 product.
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#stac-item-represents-data-and-metadata-assets-that-are-spatiotemporally-coincident">
+       4. STAC Item: Represents data and metadata assets that are spatiotemporally coincident
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#below-query-the-hlss30-collection-for-items-and-return-the-first-item-in-the-collection">
+         Below, query the HLSS30 collection for items and return the first item in the collection.
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#stac-metadata-provides-valuable-information-on-the-item-including-a-unique-id-when-it-was-acquired-the-location-of-the-observation-and-a-cloud-cover-assessment">
+         STAC metadata provides valuable information on the item, including a unique ID, when it was acquired, the location of the observation, and a cloud cover assessment.
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#below-print-out-the-ten-items-and-the-percent-cloud-cover-we-will-use-this-to-decide-which-item-to-visualize-in-the-next-section">
+         Below, print out the ten items and the percent cloud cover–we will use this to decide which item to visualize in the next section.
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#using-the-information-printed-above-set-the-item-index-below-to-whichever-observation-is-the-least-cloudy-above">
+         Using the information printed above, set the
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           item_index
+          </span>
+         </code>
+         below to whichever observation is the least cloudy above.
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#below-print-out-the-names-of-all-of-the-assets-included-in-this-item">
+         Below, print out the names of all of the assets included in this item.
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#notice-that-each-hls-item-includes-a-browse-image-read-the-browse-file-into-memory-and-visualize-the-hls-acquisition">
+         Notice that each HLS item includes a browse image. Read the browse file into memory and visualize the HLS acquisition.
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#use-the-skimage-package-to-load-the-browse-image-into-memory-and-matplotlib-to-quickly-visualize-it">
+         Use the
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           skimage
+          </span>
+         </code>
+         package to load the browse image into memory and
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           matplotlib
+          </span>
+         </code>
+         to quickly visualize it.
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <hr class="docutils" />
+<div class="section" id="getting-started-a-id-getstarted-a">
+<h1>1. Getting Started <a id="getstarted"></a><a class="headerlink" href="#getting-started-a-id-getstarted-a" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="import-packages-a-id-1-1-a">
+<h2>1.1 Import Packages <a id="1.1"></a><a class="headerlink" href="#import-packages-a-id-1-1-a" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="import-the-required-packages-and-set-the-input-working-directory-to-run-this-jupyter-notebook-locally">
+<h3>Import the required packages and set the input/working directory to run this Jupyter Notebook locally.<a class="headerlink" href="#import-the-required-packages-and-set-the-input-working-directory-to-run-this-jupyter-notebook-locally" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span> <span class="k">as</span> <span class="nn">r</span>
+<span class="kn">from</span> <span class="nn">skimage</span> <span class="kn">import</span> <span class="n">io</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="navigating-the-cmr-stac-api-a-id-navigatestac-a">
+<h1>2. Navigating the CMR-STAC API <a id="navigatestac"></a><a class="headerlink" href="#navigating-the-cmr-stac-api-a-id-navigatestac-a" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="learn-about-navigating-nasa-s-common-metadata-repository-cmr-spatiotemporal-asset-catalog-stac-api">
+<h2>Learn about navigating NASA’s Common Metadata Repository (CMR) SpatioTemporal Asset Catalog (<a class="reference external" href="https://stacspec.org/">STAC</a>) API.<a class="headerlink" href="#learn-about-navigating-nasa-s-common-metadata-repository-cmr-spatiotemporal-asset-catalog-stac-api" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="introduction-to-the-cmr-stac-api-a-id-2-1-a">
+<h2>2.1 Introduction to the CMR-STAC API <a id="2.1"></a><a class="headerlink" href="#introduction-to-the-cmr-stac-api-a-id-2-1-a" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="what-is-stac">
+<h3>What is STAC?<a class="headerlink" href="#what-is-stac" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>STAC is a specification that provides a common language for interpreting geospatial information in order to standardize indexing and discovering data.</p>
+</div></blockquote>
+</div>
+<div class="section" id="four-stac-specifications">
+<h3>Four STAC Specifications:<a class="headerlink" href="#four-stac-specifications" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p><a class="reference external" href="https://github.com/radiantearth/stac-api-spec">STAC API</a></p></li>
+<li><p><a class="reference external" href="https://github.com/radiantearth/stac-spec/blob/master/catalog-spec/catalog-spec.md">STAC Catalog</a></p></li>
+<li><p><a class="reference external" href="https://github.com/radiantearth/stac-spec/blob/master/collection-spec/collection-spec.md">STAC Collection</a></p></li>
+<li><p><a class="reference external" href="https://github.com/radiantearth/stac-spec/blob/master/item-spec/item-spec.md">STAC Item</a></p></li>
+</ol>
+<div class="section" id="in-the-section-below-we-will-walk-through-an-example-of-each-specification-for-additional-information-check-out-https-stacspec-org">
+<h4>In the section below, we will walk through an example of each specification. For additional information, check out: <a class="reference external" href="https://stacspec.org/">https://stacspec.org/</a>.<a class="headerlink" href="#in-the-section-below-we-will-walk-through-an-example-of-each-specification-for-additional-information-check-out-https-stacspec-org" title="Permalink to this headline">¶</a></h4>
+</div>
+</div>
+<div class="section" id="stac-api-endpoint-that-enables-the-querying-of-stac-items">
+<h3>1. STAC API: Endpoint that enables the querying of STAC items.<a class="headerlink" href="#stac-api-endpoint-that-enables-the-querying-of-stac-items" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="below-set-the-cmr-stac-api-endpoint-to-a-variable-and-use-the-requests-package-to-send-a-get-request-to-the-endpoint-and-set-the-response-to-a-variable">
+<h4>Below, set the CMR-STAC API Endpoint to a variable, and use the <code class="docutils literal notranslate"><span class="pre">requests</span></code> package to send a GET request to the endpoint, and set the response to a variable.<a class="headerlink" href="#below-set-the-cmr-stac-api-endpoint-to-a-variable-and-use-the-requests-package-to-send-a-get-request-to-the-endpoint-and-set-the-response-to-a-variable" title="Permalink to this headline">¶</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">stac</span> <span class="o">=</span> <span class="s1">&#39;https://cmr.earthdata.nasa.gov/stac/&#39;</span> <span class="c1"># CMR-STAC API Endpoint</span>
+<span class="n">stac_response</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">stac</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>            <span class="c1"># Call the STAC API endpoint</span>
+<span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">stac_response</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>id
+title
+stac_version
+type
+description
+links
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;You are now using the </span><span class="si">{</span><span class="n">stac_response</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> API (STAC Version: </span><span class="si">{</span><span class="n">stac_response</span><span class="p">[</span><span class="s1">&#39;stac_version&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">). </span><span class="si">{</span><span class="n">stac_response</span><span class="p">[</span><span class="s1">&#39;description&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;There are </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">stac_response</span><span class="p">[</span><span class="s1">&#39;links&#39;</span><span class="p">])</span><span class="si">}</span><span class="s2"> STAC catalogs available in CMR.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>You are now using the stac API (STAC Version: 1.0.0-beta.2). This is the landing page for CMR-STAC. Each provider link contains a STAC endpoint.
+There are 46 STAC catalogs available in CMR.
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="you-will-notice-above-that-the-cmr-stac-api-contains-many-different-endpoints-not-just-from-nasa-lp-daac-but-also-contains-endpoints-for-other-nasa-esdis-daacs">
+<h4>You will notice above that the CMR-STAC API contains many different endpoints–not just from NASA LP DAAC, but also contains endpoints for other NASA ESDIS DAACs.<a class="headerlink" href="#you-will-notice-above-that-the-cmr-stac-api-contains-many-different-endpoints-not-just-from-nasa-lp-daac-but-also-contains-endpoints-for-other-nasa-esdis-daacs" title="Permalink to this headline">¶</a></h4>
+</div>
+</div>
+<div class="section" id="stac-catalog-contains-a-json-file-of-links-that-organize-all-of-the-collections-available">
+<h3>2. STAC Catalog: Contains a JSON file of links that organize all of the collections available.<a class="headerlink" href="#stac-catalog-contains-a-json-file-of-links-that-organize-all-of-the-collections-available" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="below-search-for-lp-daac-catalogs-and-print-the-information-contained-in-the-catalog-that-we-will-be-using-today-lpcloud">
+<h4>Below, search for LP DAAC Catalogs, and print the information contained in the Catalog that we will be using today, <code class="docutils literal notranslate"><span class="pre">LPCLOUD</span></code>.<a class="headerlink" href="#below-search-for-lp-daac-catalogs-and-print-the-information-contained-in-the-catalog-that-we-will-be-using-today-lpcloud" title="Permalink to this headline">¶</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">stac_lp</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">stac_response</span><span class="p">[</span><span class="s1">&#39;links&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="s1">&#39;LP&#39;</span> <span class="ow">in</span> <span class="n">s</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]]</span>  <span class="c1"># Search for only LP-specific catalogs</span>
+
+<span class="c1"># LPCLOUD is the STAC catalog we will be using and exploring today</span>
+<span class="n">lp_cloud</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">get</span><span class="p">([</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">stac_lp</span> <span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;LPCLOUD&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;href&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">lp_cloud</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">l</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">lp_cloud</span><span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>id: LPCLOUD
+title: LPCLOUD
+description: Root catalog for LPCLOUD
+type: Catalog
+stac_version: 1.0.0-beta.2
+links: [{&#39;rel&#39;: &#39;self&#39;, &#39;href&#39;: &#39;https://cmr.earthdata.nasa.gov/stac/LPCLOUD&#39;, &#39;title&#39;: &#39;Provider catalog&#39;, &#39;type&#39;: &#39;application/json&#39;}, {&#39;rel&#39;: &#39;root&#39;, &#39;href&#39;: &#39;https://cmr.earthdata.nasa.gov/stac/&#39;, &#39;title&#39;: &#39;Root catalog&#39;, &#39;type&#39;: &#39;application/json&#39;}, {&#39;rel&#39;: &#39;collections&#39;, &#39;href&#39;: &#39;https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections&#39;, &#39;title&#39;: &#39;Provider Collections&#39;, &#39;type&#39;: &#39;application/json&#39;}, {&#39;rel&#39;: &#39;search&#39;, &#39;href&#39;: &#39;https://cmr.earthdata.nasa.gov/stac/LPCLOUD/search&#39;, &#39;title&#39;: &#39;Provider Item Search&#39;, &#39;type&#39;: &#39;application/geo+json&#39;, &#39;method&#39;: &#39;GET&#39;}, {&#39;rel&#39;: &#39;search&#39;, &#39;href&#39;: &#39;https://cmr.earthdata.nasa.gov/stac/LPCLOUD/search&#39;, &#39;title&#39;: &#39;Provider Item Search&#39;, &#39;type&#39;: &#39;application/geo+json&#39;, &#39;method&#39;: &#39;POST&#39;}, {&#39;rel&#39;: &#39;conformance&#39;, &#39;href&#39;: &#39;https://cmr.earthdata.nasa.gov/stac/LPCLOUD/conformance&#39;, &#39;title&#39;: &#39;Conformance Classes&#39;, &#39;type&#39;: &#39;application/geo+json&#39;}, {&#39;rel&#39;: &#39;service-desc&#39;, &#39;href&#39;: &#39;https://api.stacspec.org/v1.0.0-beta.1/openapi.yaml&#39;, &#39;title&#39;: &#39;OpenAPI Doc&#39;, &#39;type&#39;: &#39;application/vnd.oai.openapi+json;version=3.0&#39;}, {&#39;rel&#39;: &#39;service-doc&#39;, &#39;href&#39;: &#39;https://api.stacspec.org/v1.0.0-beta.1/index.html&#39;, &#39;title&#39;: &#39;HTML documentation&#39;, &#39;type&#39;: &#39;text/html&#39;}, {&#39;rel&#39;: &#39;child&#39;, &#39;href&#39;: &#39;https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ASTGTM.v003&#39;, &#39;type&#39;: &#39;application/json&#39;}, {&#39;rel&#39;: &#39;child&#39;, &#39;href&#39;: &#39;https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/HLSL30.v1.5&#39;, &#39;type&#39;: &#39;application/json&#39;}, {&#39;rel&#39;: &#39;child&#39;, &#39;href&#39;: &#39;https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/HLSS30.v1.5&#39;, &#39;type&#39;: &#39;application/json&#39;}]
+conformsTo: [&#39;https://api.stacspec.org/v1.0.0-beta.1/core&#39;, &#39;https://api.stacspec.org/v1.0.0-beta.1/item-search&#39;, &#39;https://api.stacspec.org/v1.0.0-beta.1/item-search#fields&#39;, &#39;https://api.stacspec.org/v1.0.0-beta.1/item-search#query&#39;, &#39;https://api.stacspec.org/v1.0.0-beta.1/item-search#sort&#39;, &#39;https://api.stacspec.org/v1.0.0-beta.1/item-search#context&#39;, &#39;http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/core&#39;, &#39;http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/oas30&#39;, &#39;http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/geojson&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="below-print-the-links-contained-in-the-lp-cloud-stac-catalog">
+<h4>Below, print the links contained in the LP CLOUD STAC Catalog:<a class="headerlink" href="#below-print-the-links-contained-in-the-lp-cloud-stac-catalog" title="Permalink to this headline">¶</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lp_links</span> <span class="o">=</span> <span class="n">lp_cloud</span><span class="p">[</span><span class="s1">&#39;links&#39;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">lp_links</span><span class="p">:</span> 
+    <span class="k">try</span><span class="p">:</span> 
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">l</span><span class="p">[</span><span class="s1">&#39;href&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> is the </span><span class="si">{</span><span class="n">l</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">l</span><span class="p">[</span><span class="s1">&#39;href&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>       
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>https://cmr.earthdata.nasa.gov/stac/LPCLOUD is the Provider catalog
+https://cmr.earthdata.nasa.gov/stac/ is the Root catalog
+https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections is the Provider Collections
+https://cmr.earthdata.nasa.gov/stac/LPCLOUD/search is the Provider Item Search
+https://cmr.earthdata.nasa.gov/stac/LPCLOUD/search is the Provider Item Search
+https://cmr.earthdata.nasa.gov/stac/LPCLOUD/conformance is the Conformance Classes
+https://api.stacspec.org/v1.0.0-beta.1/openapi.yaml is the OpenAPI Doc
+https://api.stacspec.org/v1.0.0-beta.1/index.html is the HTML documentation
+https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ASTGTM.v003
+https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/HLSL30.v1.5
+https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/HLSS30.v1.5
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="stac-collection-extension-of-stac-catalog-containing-additional-information-that-describe-the-stac-items-in-that-collection">
+<h3>3. STAC Collection: Extension of STAC Catalog containing additional information that describe the STAC Items in that Collection.<a class="headerlink" href="#stac-collection-extension-of-stac-catalog-containing-additional-information-that-describe-the-stac-items-in-that-collection" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="below-get-a-response-from-the-lpcloud-collection-and-print-the-information-included-in-the-response">
+<h4>Below, get a response from the LPCLOUD Collection and print the information included in the response.<a class="headerlink" href="#below-get-a-response-from-the-lpcloud-collection-and-print-the-information-included-in-the-response" title="Permalink to this headline">¶</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lp_collections</span> <span class="o">=</span> <span class="p">[</span><span class="n">l</span><span class="p">[</span><span class="s1">&#39;href&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">lp_links</span> <span class="k">if</span> <span class="n">l</span><span class="p">[</span><span class="s1">&#39;rel&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;collections&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># Set collections endpoint to variable</span>
+<span class="n">collections_response</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">lp_collections</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>                        <span class="c1"># Call collections endpoint</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;This collection contains </span><span class="si">{</span><span class="n">collections_response</span><span class="p">[</span><span class="s1">&#39;description&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">collections_response</span><span class="p">[</span><span class="s1">&#39;collections&#39;</span><span class="p">])</span><span class="si">}</span><span class="s2"> available)&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>This collection contains All collections provided by LPCLOUD (3 available)
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="as-of-march-3-2021-there-are-three-collections-available-and-more-will-be-added-in-the-future">
+<h4>As of March 3, 2021, there are three collections available, and more will be added in the future.<a class="headerlink" href="#as-of-march-3-2021-there-are-three-collections-available-and-more-will-be-added-in-the-future" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="print-out-one-of-the-collections">
+<h4>Print out one of the collections:<a class="headerlink" href="#print-out-one-of-the-collections" title="Permalink to this headline">¶</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">collections</span> <span class="o">=</span> <span class="n">collections_response</span><span class="p">[</span><span class="s1">&#39;collections&#39;</span><span class="p">]</span>
+<span class="n">collections</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;id&#39;: &#39;HLSL30.v1.5&#39;,
+ &#39;stac_version&#39;: &#39;1.0.0-beta.2&#39;,
+ &#39;license&#39;: &#39;not-provided&#39;,
+ &#39;title&#39;: &#39;HLS Operational Land Imager Surface Reflectance and TOA Brightness Daily Global 30 m V1.5&#39;,
+ &#39;type&#39;: &#39;Collection&#39;,
+ &#39;description&#39;: &#39;PROVISIONAL - The Harmonized Landsat and Sentinel-2 (HLS) project provides consistent surface reflectance (SR) and top of atmosphere (TOA) brightness data from the Operational Land Imager (OLI) aboard the joint NASA/USGS Landsat 8 satellite and the Multi-Spectral Instrument (MSI) aboard Europe’s Copernicus Sentinel-2A and Sentinel-2B satellites. The combined measurement enables global observations of the land every 2–3 days at 30-meter (m) spatial resolution. The HLS project uses a set of algorithms to obtain seamless products from OLI and MSI that include atmospheric correction, cloud and cloud-shadow masking, spatial co-registration and common gridding, illumination and view angle normalization, and spectral bandpass adjustment. \r\n\r\nThe HLSL30 product provides 30-m Nadir Bidirectional Reflectance Distribution Function (BRDF)-Adjusted Reflectance (NBAR) and is derived from Landsat 8 OLI data products. The  HLSS30 (https://doi.org/10.5067/HLS/HLSS30.015) and HLSL30 products are gridded to the same resolution and Military Grid Reference System (MGRS) (https://hls.gsfc.nasa.gov/products-description/tiling-system/) tiling system, and thus are “stackable” for time series analysis.\r\n\r\nThe HLSL30 product is provided in Cloud Optimized GeoTIFF (COG) format, and each band is distributed as a separate file. There are 10 bands included in the HLSL30 product along with one quality assessment (QA) band and four angle bands. For a more detailed description of the individual bands provided in the HLSL30 product, please see the User Guide (https://lpdaac.usgs.gov/documents/878/HLS_User_Guide_V15_provisional.pdf).\r\n\r\n&#39;,
+ &#39;links&#39;: [{&#39;rel&#39;: &#39;self&#39;,
+   &#39;href&#39;: &#39;https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/HLSL30.v1.5&#39;,
+   &#39;title&#39;: &#39;Info about this collection&#39;,
+   &#39;type&#39;: &#39;application/json&#39;},
+  {&#39;rel&#39;: &#39;root&#39;,
+   &#39;href&#39;: &#39;https://cmr.earthdata.nasa.gov/stac&#39;,
+   &#39;title&#39;: &#39;Root catalog&#39;,
+   &#39;type&#39;: &#39;application/json&#39;},
+  {&#39;rel&#39;: &#39;parent&#39;,
+   &#39;href&#39;: &#39;https://cmr.earthdata.nasa.gov/stac/LPCLOUD&#39;,
+   &#39;title&#39;: &#39;Parent catalog&#39;,
+   &#39;type&#39;: &#39;application/json&#39;},
+  {&#39;rel&#39;: &#39;items&#39;,
+   &#39;href&#39;: &#39;https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/HLSL30.v1.5/items&#39;,
+   &#39;title&#39;: &#39;Granules in this collection&#39;,
+   &#39;type&#39;: &#39;application/json&#39;},
+  {&#39;rel&#39;: &#39;about&#39;,
+   &#39;href&#39;: &#39;https://cmr.earthdata.nasa.gov/search/concepts/C1711972753-LPCLOUD.html&#39;,
+   &#39;title&#39;: &#39;HTML metadata for collection&#39;,
+   &#39;type&#39;: &#39;text/html&#39;},
+  {&#39;rel&#39;: &#39;via&#39;,
+   &#39;href&#39;: &#39;https://cmr.earthdata.nasa.gov/search/concepts/C1711972753-LPCLOUD.json&#39;,
+   &#39;title&#39;: &#39;CMR JSON metadata for collection&#39;,
+   &#39;type&#39;: &#39;application/json&#39;}],
+ &#39;extent&#39;: {&#39;crs&#39;: &#39;http://www.opengis.net/def/crs/OGC/1.3/CRS84&#39;,
+  &#39;spatial&#39;: {&#39;bbox&#39;: [[-180, -90, 180, 90]]},
+  &#39;trs&#39;: &#39;http://www.opengis.net/def/uom/ISO-8601/0/Gregorian&#39;,
+  &#39;temporal&#39;: {&#39;interval&#39;: [[&#39;2013-04-11T00:00:00.000Z&#39;, None]]}}}
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="in-cmr-id-is-used-to-query-by-a-specific-product-so-be-sure-to-save-the-id-for-the-hls-s30-and-l30-v1-5-products-below">
+<h4>In CMR, <code class="docutils literal notranslate"><span class="pre">id</span></code> is used to query by a specific product, so be sure to save the ID for the HLS S30 and L30 V1.5 products below:<a class="headerlink" href="#in-cmr-id-is-used-to-query-by-a-specific-product-so-be-sure-to-save-the-id-for-the-hls-s30-and-l30-v1-5-products-below" title="Permalink to this headline">¶</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Search available collections for HLS and print them out</span>
+<span class="n">hls_collections</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">collections</span> <span class="k">if</span> <span class="s1">&#39;HLS&#39;</span> <span class="ow">in</span> <span class="n">c</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]]</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">hls_collections</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">h</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> has an ID (shortname) of: </span><span class="si">{</span><span class="n">h</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>HLS Operational Land Imager Surface Reflectance and TOA Brightness Daily Global 30 m V1.5 has an ID (shortname) of: HLSL30.v1.5
+HLS Sentinel-2 Multi-spectral Instrument Surface Reflectance Daily Global 30 m V1.5 has an ID (shortname) of: HLSS30.v1.5
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="note-that-the-id-shortname-is-in-the-format-productshortname-vvvv-where-vvv-product-version">
+<h4>Note that the “id” shortname is in the format: productshortname.vVVV (where VVV = product version)<a class="headerlink" href="#note-that-the-id-shortname-is-in-the-format-productshortname-vvvv-where-vvv-product-version" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="explore-the-attributes-contained-in-the-hlss30-collection">
+<h4>Explore the attributes contained in the HLSS30 Collection.<a class="headerlink" href="#explore-the-attributes-contained-in-the-hlss30-collection" title="Permalink to this headline">¶</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s30</span> <span class="o">=</span> <span class="p">[</span><span class="n">h</span> <span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">hls_collections</span> <span class="k">if</span> <span class="n">h</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;HLSS30.v1.5&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># Grab HLSS30 collection</span>
+<span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">s30</span><span class="p">[</span><span class="s1">&#39;extent&#39;</span><span class="p">]:</span> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">s</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">s30</span><span class="p">[</span><span class="s1">&#39;extent&#39;</span><span class="p">][</span><span class="n">s</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>          <span class="c1"># Check out the extent of this collection</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+spatial: {&#39;bbox&#39;: [[-180, -90, 180, 90]]}
+trs: http://www.opengis.net/def/uom/ISO-8601/0/Gregorian
+temporal: {&#39;interval&#39;: [[&#39;2014-04-03T00:00:00.000Z&#39;, None]]}
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="so-here-we-can-see-that-the-extent-is-global-and-can-also-see-the-temporal-range-where-none-means-on-going-or-to-present">
+<h4>So here we can see that the extent is global, and can also see the temporal range–where “None” means on-going or to present.<a class="headerlink" href="#so-here-we-can-see-that-the-extent-is-global-and-can-also-see-the-temporal-range-where-none-means-on-going-or-to-present" title="Permalink to this headline">¶</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;HLS S30 Start Date is: </span><span class="si">{</span><span class="n">s30</span><span class="p">[</span><span class="s1">&#39;extent&#39;</span><span class="p">][</span><span class="s1">&#39;temporal&#39;</span><span class="p">][</span><span class="s1">&#39;interval&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">s30_id</span> <span class="o">=</span> <span class="n">s30</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>HLS S30 Start Date is: 2014-04-03T00:00:00.000Z
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="next-explore-the-attributes-of-the-hlsl30-collection">
+<h4>Next, explore the attributes of the HLSL30 collection.<a class="headerlink" href="#next-explore-the-attributes-of-the-hlsl30-collection" title="Permalink to this headline">¶</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">l30</span> <span class="o">=</span> <span class="p">[</span><span class="n">h</span> <span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">hls_collections</span> <span class="k">if</span> <span class="n">h</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;HLSL30.v1.5&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>     <span class="c1"># Grab HLSL30 collection</span>
+<span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">l30</span><span class="p">[</span><span class="s1">&#39;extent&#39;</span><span class="p">]:</span> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">l</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">l30</span><span class="p">[</span><span class="s1">&#39;extent&#39;</span><span class="p">][</span><span class="n">l</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>             <span class="c1"># Check out the extent of this collection</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;HLS L30 Start Date is: </span><span class="si">{</span><span class="n">l30</span><span class="p">[</span><span class="s1">&#39;extent&#39;</span><span class="p">][</span><span class="s1">&#39;temporal&#39;</span><span class="p">][</span><span class="s1">&#39;interval&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">l30_id</span> <span class="o">=</span> <span class="n">l30</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+spatial: {&#39;bbox&#39;: [[-180, -90, 180, 90]]}
+trs: http://www.opengis.net/def/uom/ISO-8601/0/Gregorian
+temporal: {&#39;interval&#39;: [[&#39;2013-04-11T00:00:00.000Z&#39;, None]]}
+HLS L30 Start Date is: 2013-04-11T00:00:00.000Z
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="above-notice-that-the-l30-product-has-a-different-start-date-than-the-s30-product">
+<h4>Above, notice that the L30 product has a different start date than the S30 product.<a class="headerlink" href="#above-notice-that-the-l30-product-has-a-different-start-date-than-the-s30-product" title="Permalink to this headline">¶</a></h4>
+</div>
+</div>
+<div class="section" id="stac-item-represents-data-and-metadata-assets-that-are-spatiotemporally-coincident">
+<h3>4. STAC Item: Represents data and metadata assets that are spatiotemporally coincident<a class="headerlink" href="#stac-item-represents-data-and-metadata-assets-that-are-spatiotemporally-coincident" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="below-query-the-hlss30-collection-for-items-and-return-the-first-item-in-the-collection">
+<h4>Below, query the HLSS30 collection for items and return the first item in the collection.<a class="headerlink" href="#below-query-the-hlss30-collection-for-items-and-return-the-first-item-in-the-collection" title="Permalink to this headline">¶</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Below, go through all links in the collection and return the link containing the items endpoint</span>
+<span class="n">s30_items</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span><span class="p">[</span><span class="s1">&#39;href&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">s30</span><span class="p">[</span><span class="s1">&#39;links&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="s1">&#39;rel&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;items&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># Set items endpoint to variable</span>
+<span class="n">s30_items</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/HLSS30.v1.5/items&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s30_items_response</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">s30_items</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>                        <span class="c1"># Call items endpoint</span>
+<span class="n">s30_item</span> <span class="o">=</span> <span class="n">s30_items_response</span><span class="p">[</span><span class="s1">&#39;features&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>                             <span class="c1"># select first item (10 items returned by default)</span>
+<span class="n">s30_item</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;type&#39;: &#39;Feature&#39;,
+ &#39;id&#39;: &#39;G1969487860-LPCLOUD&#39;,
+ &#39;stac_version&#39;: &#39;1.0.0-beta.2&#39;,
+ &#39;stac_extensions&#39;: [&#39;eo&#39;],
+ &#39;collection&#39;: &#39;HLSS30.v1.5&#39;,
+ &#39;geometry&#39;: {&#39;type&#39;: &#39;Polygon&#39;,
+  &#39;coordinates&#39;: [[[-119.1488671, 33.3327671],
+    [-118.9832795, 33.3355226],
+    [-118.6783731, 34.3301598],
+    [-119.1737801, 34.3223655],
+    [-119.1488671, 33.3327671]]]},
+ &#39;bbox&#39;: [-119.17378, 33.332767, -118.678373, 34.33016],
+ &#39;links&#39;: [{&#39;rel&#39;: &#39;self&#39;,
+   &#39;href&#39;: &#39;https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/HLSS30.v1.5/items/G1969487860-LPCLOUD&#39;},
+  {&#39;rel&#39;: &#39;parent&#39;,
+   &#39;href&#39;: &#39;https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/HLSS30.v1.5&#39;},
+  {&#39;rel&#39;: &#39;collection&#39;,
+   &#39;href&#39;: &#39;https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/HLSS30.v1.5&#39;},
+  {&#39;rel&#39;: &#39;root&#39;, &#39;href&#39;: &#39;https://cmr.earthdata.nasa.gov/stac/&#39;},
+  {&#39;rel&#39;: &#39;provider&#39;, &#39;href&#39;: &#39;https://cmr.earthdata.nasa.gov/stac/LPCLOUD&#39;},
+  {&#39;rel&#39;: &#39;via&#39;,
+   &#39;href&#39;: &#39;https://cmr.earthdata.nasa.gov/search/concepts/G1969487860-LPCLOUD.json&#39;},
+  {&#39;rel&#39;: &#39;via&#39;,
+   &#39;href&#39;: &#39;https://cmr.earthdata.nasa.gov/search/concepts/G1969487860-LPCLOUD.umm_json&#39;}],
+ &#39;properties&#39;: {&#39;datetime&#39;: &#39;2015-08-26T18:54:35.450Z&#39;,
+  &#39;start_datetime&#39;: &#39;2015-08-26T18:54:35.450Z&#39;,
+  &#39;end_datetime&#39;: &#39;2015-08-26T18:54:35.450Z&#39;,
+  &#39;eo:cloud_cover&#39;: 6},
+ &#39;assets&#39;: {&#39;VZA&#39;: {&#39;title&#39;: &#39;Download HLS.S30.T11SLT.2015238T185436.v1.5.VZA.tif&#39;,
+   &#39;href&#39;: &#39;https://lpdaac.earthdata.nasa.gov/lp-prod-protected/HLSS30.015/HLS.S30.T11SLT.2015238T185436.v1.5.VZA.tif&#39;},
+  &#39;VAA&#39;: {&#39;title&#39;: &#39;Download HLS.S30.T11SLT.2015238T185436.v1.5.VAA.tif&#39;,
+   &#39;href&#39;: &#39;https://lpdaac.earthdata.nasa.gov/lp-prod-protected/HLSS30.015/HLS.S30.T11SLT.2015238T185436.v1.5.VAA.tif&#39;},
+  &#39;SAA&#39;: {&#39;title&#39;: &#39;Download HLS.S30.T11SLT.2015238T185436.v1.5.SAA.tif&#39;,
+   &#39;href&#39;: &#39;https://lpdaac.earthdata.nasa.gov/lp-prod-protected/HLSS30.015/HLS.S30.T11SLT.2015238T185436.v1.5.SAA.tif&#39;},
+  &#39;B11&#39;: {&#39;title&#39;: &#39;Download HLS.S30.T11SLT.2015238T185436.v1.5.B11.tif&#39;,
+   &#39;href&#39;: &#39;https://lpdaac.earthdata.nasa.gov/lp-prod-protected/HLSS30.015/HLS.S30.T11SLT.2015238T185436.v1.5.B11.tif&#39;},
+  &#39;B02&#39;: {&#39;title&#39;: &#39;Download HLS.S30.T11SLT.2015238T185436.v1.5.B02.tif&#39;,
+   &#39;href&#39;: &#39;https://lpdaac.earthdata.nasa.gov/lp-prod-protected/HLSS30.015/HLS.S30.T11SLT.2015238T185436.v1.5.B02.tif&#39;},
+  &#39;B09&#39;: {&#39;title&#39;: &#39;Download HLS.S30.T11SLT.2015238T185436.v1.5.B09.tif&#39;,
+   &#39;href&#39;: &#39;https://lpdaac.earthdata.nasa.gov/lp-prod-protected/HLSS30.015/HLS.S30.T11SLT.2015238T185436.v1.5.B09.tif&#39;},
+  &#39;B12&#39;: {&#39;title&#39;: &#39;Download HLS.S30.T11SLT.2015238T185436.v1.5.B12.tif&#39;,
+   &#39;href&#39;: &#39;https://lpdaac.earthdata.nasa.gov/lp-prod-protected/HLSS30.015/HLS.S30.T11SLT.2015238T185436.v1.5.B12.tif&#39;},
+  &#39;B03&#39;: {&#39;title&#39;: &#39;Download HLS.S30.T11SLT.2015238T185436.v1.5.B03.tif&#39;,
+   &#39;href&#39;: &#39;https://lpdaac.earthdata.nasa.gov/lp-prod-protected/HLSS30.015/HLS.S30.T11SLT.2015238T185436.v1.5.B03.tif&#39;},
+  &#39;B01&#39;: {&#39;title&#39;: &#39;Download HLS.S30.T11SLT.2015238T185436.v1.5.B01.tif&#39;,
+   &#39;href&#39;: &#39;https://lpdaac.earthdata.nasa.gov/lp-prod-protected/HLSS30.015/HLS.S30.T11SLT.2015238T185436.v1.5.B01.tif&#39;},
+  &#39;B07&#39;: {&#39;title&#39;: &#39;Download HLS.S30.T11SLT.2015238T185436.v1.5.B07.tif&#39;,
+   &#39;href&#39;: &#39;https://lpdaac.earthdata.nasa.gov/lp-prod-protected/HLSS30.015/HLS.S30.T11SLT.2015238T185436.v1.5.B07.tif&#39;},
+  &#39;SZA&#39;: {&#39;title&#39;: &#39;Download HLS.S30.T11SLT.2015238T185436.v1.5.SZA.tif&#39;,
+   &#39;href&#39;: &#39;https://lpdaac.earthdata.nasa.gov/lp-prod-protected/HLSS30.015/HLS.S30.T11SLT.2015238T185436.v1.5.SZA.tif&#39;},
+  &#39;B05&#39;: {&#39;title&#39;: &#39;Download HLS.S30.T11SLT.2015238T185436.v1.5.B05.tif&#39;,
+   &#39;href&#39;: &#39;https://lpdaac.earthdata.nasa.gov/lp-prod-protected/HLSS30.015/HLS.S30.T11SLT.2015238T185436.v1.5.B05.tif&#39;},
+  &#39;B06&#39;: {&#39;title&#39;: &#39;Download HLS.S30.T11SLT.2015238T185436.v1.5.B06.tif&#39;,
+   &#39;href&#39;: &#39;https://lpdaac.earthdata.nasa.gov/lp-prod-protected/HLSS30.015/HLS.S30.T11SLT.2015238T185436.v1.5.B06.tif&#39;},
+  &#39;Fmask&#39;: {&#39;title&#39;: &#39;Download HLS.S30.T11SLT.2015238T185436.v1.5.Fmask.tif&#39;,
+   &#39;href&#39;: &#39;https://lpdaac.earthdata.nasa.gov/lp-prod-protected/HLSS30.015/HLS.S30.T11SLT.2015238T185436.v1.5.Fmask.tif&#39;},
+  &#39;B10&#39;: {&#39;title&#39;: &#39;Download HLS.S30.T11SLT.2015238T185436.v1.5.B10.tif&#39;,
+   &#39;href&#39;: &#39;https://lpdaac.earthdata.nasa.gov/lp-prod-protected/HLSS30.015/HLS.S30.T11SLT.2015238T185436.v1.5.B10.tif&#39;},
+  &#39;B08&#39;: {&#39;title&#39;: &#39;Download HLS.S30.T11SLT.2015238T185436.v1.5.B08.tif&#39;,
+   &#39;href&#39;: &#39;https://lpdaac.earthdata.nasa.gov/lp-prod-protected/HLSS30.015/HLS.S30.T11SLT.2015238T185436.v1.5.B08.tif&#39;},
+  &#39;B8A&#39;: {&#39;title&#39;: &#39;Download HLS.S30.T11SLT.2015238T185436.v1.5.B8A.tif&#39;,
+   &#39;href&#39;: &#39;https://lpdaac.earthdata.nasa.gov/lp-prod-protected/HLSS30.015/HLS.S30.T11SLT.2015238T185436.v1.5.B8A.tif&#39;},
+  &#39;B04&#39;: {&#39;title&#39;: &#39;Download HLS.S30.T11SLT.2015238T185436.v1.5.B04.tif&#39;,
+   &#39;href&#39;: &#39;https://lpdaac.earthdata.nasa.gov/lp-prod-protected/HLSS30.015/HLS.S30.T11SLT.2015238T185436.v1.5.B04.tif&#39;},
+  &#39;browse&#39;: {&#39;title&#39;: &#39;Download HLS.S30.T11SLT.2015238T185436.v1.5.jpg&#39;,
+   &#39;href&#39;: &#39;https://lpdaac.earthdata.nasa.gov/lp-prod-public/HLSS30.015/HLS.S30.T11SLT.2015238T185436.v1.5.jpg&#39;,
+   &#39;type&#39;: &#39;image/jpeg&#39;},
+  &#39;metadata&#39;: {&#39;href&#39;: &#39;https://cmr.earthdata.nasa.gov/search/concepts/G1969487860-LPCLOUD.xml&#39;,
+   &#39;type&#39;: &#39;application/xml&#39;}}}
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="stac-metadata-provides-valuable-information-on-the-item-including-a-unique-id-when-it-was-acquired-the-location-of-the-observation-and-a-cloud-cover-assessment">
+<h4>STAC metadata provides valuable information on the item, including a unique ID, when it was acquired, the location of the observation, and a cloud cover assessment.<a class="headerlink" href="#stac-metadata-provides-valuable-information-on-the-item-including-a-unique-id-when-it-was-acquired-the-location-of-the-observation-and-a-cloud-cover-assessment" title="Permalink to this headline">¶</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Print metadata attributes from this observation</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The ID for this item is: </span><span class="si">{</span><span class="n">s30_item</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;It was acquired on: </span><span class="si">{</span><span class="n">s30_item</span><span class="p">[</span><span class="s1">&#39;properties&#39;</span><span class="p">][</span><span class="s1">&#39;datetime&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;over: </span><span class="si">{</span><span class="n">s30_item</span><span class="p">[</span><span class="s1">&#39;bbox&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> (Lower Left, Upper Right corner coordinates)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;It contains </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">s30_item</span><span class="p">[</span><span class="s1">&#39;assets&#39;</span><span class="p">])</span><span class="si">}</span><span class="s2"> assets&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;and is </span><span class="si">{</span><span class="n">s30_item</span><span class="p">[</span><span class="s1">&#39;properties&#39;</span><span class="p">][</span><span class="s1">&#39;eo:cloud_cover&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">% cloudy.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The ID for this item is: G1969487860-LPCLOUD
+It was acquired on: 2015-08-26T18:54:35.450Z
+over: [-119.17378, 33.332767, -118.678373, 34.33016] (Lower Left, Upper Right corner coordinates)
+It contains 20 assets
+and is 6% cloudy.
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="below-print-out-the-ten-items-and-the-percent-cloud-cover-we-will-use-this-to-decide-which-item-to-visualize-in-the-next-section">
+<h4>Below, print out the ten items and the percent cloud cover–we will use this to decide which item to visualize in the next section.<a class="headerlink" href="#below-print-out-the-ten-items-and-the-percent-cloud-cover-we-will-use-this-to-decide-which-item-to-visualize-in-the-next-section" title="Permalink to this headline">¶</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">s30_items_response</span><span class="p">[</span><span class="s1">&#39;features&#39;</span><span class="p">]):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Item at index </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2"> is </span><span class="si">{</span><span class="n">s</span><span class="p">[</span><span class="s1">&#39;properties&#39;</span><span class="p">][</span><span class="s1">&#39;eo:cloud_cover&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">% cloudy.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Item at index 0 is 6% cloudy.
+Item at index 1 is 100% cloudy.
+Item at index 2 is 30% cloudy.
+Item at index 3 is 67% cloudy.
+Item at index 4 is 99% cloudy.
+Item at index 5 is 24% cloudy.
+Item at index 6 is 15% cloudy.
+Item at index 7 is 3% cloudy.
+Item at index 8 is 6% cloudy.
+Item at index 9 is 6% cloudy.
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="using-the-information-printed-above-set-the-item-index-below-to-whichever-observation-is-the-least-cloudy-above">
+<h4>Using the information printed above, set the <code class="docutils literal notranslate"><span class="pre">item_index</span></code> below to whichever observation is the least cloudy above.<a class="headerlink" href="#using-the-information-printed-above-set-the-item-index-below-to-whichever-observation-is-the-least-cloudy-above" title="Permalink to this headline">¶</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">item_index</span> <span class="o">=</span> <span class="mi">9</span>  <span class="c1"># Indexing starts at 0 in Python, so here select the eighth item in the list at index 7</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s30_item</span> <span class="o">=</span> <span class="n">s30_items_response</span><span class="p">[</span><span class="s1">&#39;features&#39;</span><span class="p">][</span><span class="n">item_index</span><span class="p">]</span>  <span class="c1"># Grab the next item in the list</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The ID for this item is: </span><span class="si">{</span><span class="n">s30_item</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;It was acquired on: </span><span class="si">{</span><span class="n">s30_item</span><span class="p">[</span><span class="s1">&#39;properties&#39;</span><span class="p">][</span><span class="s1">&#39;datetime&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;over: </span><span class="si">{</span><span class="n">s30_item</span><span class="p">[</span><span class="s1">&#39;bbox&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> (Lower Left, Upper Right corner coordinates)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;It contains </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">s30_item</span><span class="p">[</span><span class="s1">&#39;assets&#39;</span><span class="p">])</span><span class="si">}</span><span class="s2"> assets&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;and is </span><span class="si">{</span><span class="n">s30_item</span><span class="p">[</span><span class="s1">&#39;properties&#39;</span><span class="p">][</span><span class="s1">&#39;eo:cloud_cover&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">% cloudy.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The ID for this item is: G2010297093-LPCLOUD
+It was acquired on: 2016-11-06T08:21:39.880Z
+over: [26.999803, -24.501758, 28.083499, -23.506303] (Lower Left, Upper Right corner coordinates)
+It contains 20 assets
+and is 6% cloudy.
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="below-print-out-the-names-of-all-of-the-assets-included-in-this-item">
+<h4>Below, print out the names of all of the assets included in this item.<a class="headerlink" href="#below-print-out-the-names-of-all-of-the-assets-included-in-this-item" title="Permalink to this headline">¶</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The following assets are available for download:&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">s30_item</span><span class="p">[</span><span class="s1">&#39;assets&#39;</span><span class="p">]:</span> <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The following assets are available for download:
+B05
+B09
+VZA
+B06
+B08
+B10
+B03
+B11
+B07
+Fmask
+B04
+B12
+VAA
+SAA
+B01
+B02
+B8A
+SZA
+browse
+metadata
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="notice-that-each-hls-item-includes-a-browse-image-read-the-browse-file-into-memory-and-visualize-the-hls-acquisition">
+<h4>Notice that each HLS item includes a browse image. Read the browse file into memory and visualize the HLS acquisition.<a class="headerlink" href="#notice-that-each-hls-item-includes-a-browse-image-read-the-browse-file-into-memory-and-visualize-the-hls-acquisition" title="Permalink to this headline">¶</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s30_item</span><span class="p">[</span><span class="s1">&#39;assets&#39;</span><span class="p">][</span><span class="s1">&#39;browse&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;title&#39;: &#39;Download HLS.S30.T35KNP.2016311T080122.v1.5.jpg&#39;,
+ &#39;href&#39;: &#39;https://lpdaac.earthdata.nasa.gov/lp-prod-public/HLSS30.015/HLS.S30.T35KNP.2016311T080122.v1.5.jpg&#39;,
+ &#39;type&#39;: &#39;image/jpeg&#39;}
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="use-the-skimage-package-to-load-the-browse-image-into-memory-and-matplotlib-to-quickly-visualize-it">
+<h4>Use the <code class="docutils literal notranslate"><span class="pre">skimage</span></code> package to load the browse image into memory and <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> to quickly visualize it.<a class="headerlink" href="#use-the-skimage-package-to-load-the-browse-image-into-memory-and-matplotlib-to-quickly-visualize-it" title="Permalink to this headline">¶</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">image</span> <span class="o">=</span> <span class="n">io</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">s30_item</span><span class="p">[</span><span class="s1">&#39;assets&#39;</span><span class="p">][</span><span class="s1">&#39;browse&#39;</span><span class="p">][</span><span class="s1">&#39;href&#39;</span><span class="p">])</span>  <span class="c1"># Load jpg browse image into memory</span>
+
+<span class="c1"># Basic plot of the image</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>              
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/Navigate_CMR_STAC_41_0.png" src="_images/Navigate_CMR_STAC_41_0.png" />
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="notebooks.html" title="previous page">Content with notebooks</a>
+    <a class='right-next' id="next-link" href="mymarkdownfile.html" title="next page">Here’s my sample title</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By The Jupyter Book Community<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>
